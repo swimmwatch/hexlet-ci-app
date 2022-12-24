@@ -1,5 +1,7 @@
 name: Run application linters and tests.
-on: push
+on:
+  push:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,3 +18,7 @@ jobs:
         run: make lint
       - name: Run tests
         run: make test
+      - name: Run Snyk to check for vulnerabilities
+        uses: snyk/actions/node@master
+        env:
+          SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
