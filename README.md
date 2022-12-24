@@ -1,4 +1,5 @@
 # Example app for CI Hexlet course
+![Node check CI](https://github.com/swimmwatch/hexlet-ci-app/actions/workflows/check.yml/badge.svg?branch=main)
 
 Starting boilerplate of [Strapi](https://strapi.io/) application
 
