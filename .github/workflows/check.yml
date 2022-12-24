@@ -11,8 +11,6 @@ jobs:
           node-version: 18
       - name: Install dependencies
         run: make setup
-      - name: Start application
-        run: make start
       - name: Run linters
         run: make lint
       - name: Run tests
